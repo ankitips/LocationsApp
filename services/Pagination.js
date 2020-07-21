@@ -94,7 +94,8 @@ class Pagination extends React.Component {
         return (
             <div>
                 <ul className="pagination">
-                    <li>Page {pager.currentPage} - {pager.endPage} of {pager.totalPages}</li>
+                     <li> {pager.startIndex + 1} - {pager.endIndex + 1} of {pager.currentPage}</li>
+
                     <li className={pager.currentPage === 1 ? 'disabled' : ''}>
                         <a onClick={() => this.setPage(1)}>{"|"}<span className="navfont">{"<"}</span></a>
                     </li>
