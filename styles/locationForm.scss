@@ -1,0 +1,131 @@
+.location-form{
+    text-align: left;
+    .title{
+        font-size: 16px;
+        color: $themeColor;
+        font-weight: bold;
+        margin-bottom: 32px;
+    }
+    .wid100{
+        width: 100%;
+    }
+    .wid50{
+        width: 50%;
+    }
+    .wid90{
+        width: 90%;
+    }
+    .wid80{
+        width: 80%;
+    }
+    .wid20{
+        width: 20%;
+    }
+    .wid25{
+        width: 25%;
+    }
+    .form-field{
+        position: relative;
+        margin-top:48px;
+        .lbl{
+          position: absolute;
+          bottom: 24px;
+          font-size: 12px;
+          color: #aaa;
+          font-weight: bold;
+          left: 0;
+          
+        }
+        .lft10{
+            left:10%;
+        }
+        .lft20{
+            left:20%;
+        }
+        .rmv_ampm::-webkit-datetime-edit-ampm-field {
+            display: none;
+          }
+          input[type=time]::-webkit-clear-button {
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            -o-appearance: none;
+            -ms-appearance:none;
+            appearance: none;
+            margin: -10px; 
+          }
+          input[type="time"]::-webkit-calendar-picker-indicator {
+            background: none;
+        }
+    }
+    .facility-time{
+         .form-field{
+             margin-top: 30px;
+         }
+         .rmv_ampm{
+            border: 1px solid #aaa;
+            border-radius: 2px;
+            width: 85px;
+            padding-left: 8px;
+         }
+         .day{
+             width: 40px;
+             display: inline-block;
+             margin-left: 10px;
+             font-size: 13px;
+             color: gray;
+         }
+        .ltm{
+            margin-left: 40px;
+        }
+        .apply-all-btn{
+            background: transparent;
+            color: $themeColor;
+            border-radius: 2px;
+            letter-spacing: 0;
+            border: 1px solid $themeColor;
+        }
+        .format{
+            padding-left: 6px;
+            .active{
+                background-color: $themeColor;
+                padding: 6px 15px;
+                color: #fff;
+                font-size: 13px;
+                border-radius: 4px;
+            }
+           .inactive{     
+              @extend .active;
+               background-color: #eee;
+               color: black;
+             
+           }
+        }
+    }
+   
+    .input{
+        border:none;
+        outline: none;
+        padding-bottom: 5px;
+        font-size: 14px;
+        border-bottom: 1px solid #ddd;
+        &:focus{
+            border-color: $themeColor;
+            border-bottom:2px solid $themeColor;
+         & + .lbl{
+             color: $themeColor;
+         }   
+        }
+    }
+    .edit-btns{
+        text-align: right;
+        margin-top: 30px;
+        .btn{
+            border-radius: 2px;
+            padding: 10px 20px;
+            margin-left: 20px;
+        }
+        .cncl{
+            background: indianred;
+        }
+    }
+}

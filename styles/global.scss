@@ -1,0 +1,133 @@
+.btn{
+    background: $themeColor;
+    color: #fff;
+    border: none;
+    outline: none;
+    font-size: 12px;
+    border-radius: 15px;
+    letter-spacing: 1px;
+    &:hover{
+        color: #fff;
+        outline: none;
+    }
+}
+body{
+    background-color: #eee;
+}
+
+.hidden {
+    display: none;
+  }
+  .show {
+    display: block;
+  }
+  
+  .darkOverlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+    padding: 1rem;
+    background: rgba(0, 0, 0, 0.2);
+  }
+  .dis-ib{
+      display: inline-block;
+  }
+  .rtl{
+      text-align: right;
+  }
+  .ltl{
+      text-align: left;
+  }
+
+  .pagination {
+    text-align: right;
+    background: #fff;
+    background-color: #fff;
+    padding: 10px 50px;
+    font-size: 12px;
+    display: flex;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    position: relative;
+    justify-content: center;
+    .navfont{
+        font-size: 14px;
+    }
+  
+    li {
+      display: inline-block;
+      font-size: 13px;
+      padding: 0 10px;
+      a {
+        padding: 9px;
+        color: grey;
+        cursor: pointer;
+        font-size: 16px;
+        font-family: sans-serif;
+        font-weight: bold;
+      }
+    }
+    .active {
+      color: #333 !important;
+      font-size: 20px;
+    }
+  }
+  .pagi_letters {
+    li {
+      padding: 5px;
+    }
+  }
+
+  .custom_s_alert {
+    position: fixed;
+    z-index: 1200;
+    width: auto;
+    padding: 0 30px;;
+    top: 6px;
+    right: 43%;
+    color: #4f8a10;
+    background-color: #dff2bf;
+    text-align: center;
+    border-radius: 6px;
+    line-height: 2.5;
+    overflow: hidden;
+    -webkit-box-shadow: 0 0 5px black;
+    -moz-box-shadow: 0 0 5px black;
+    box-shadow: 0 0 5px black;
+    transition: all 0.4s ease-in-out;
+    span {
+      margin-left: 20px;
+    }
+  }
+  .custom_e_alert {
+    position: fixed;
+    z-index: 1200;
+    width: auto;
+    padding: 0 30px;;
+    top: 6px;
+    border-radius: 6px;
+    right: 43%;
+    color: #d8000c;
+    background-color: #ffbaba;
+    text-align: center;
+    line-height: 2.5;
+    overflow: hidden;
+    -webkit-box-shadow: 0 0 5px black;
+    -moz-box-shadow: 0 0 5px black;
+    box-shadow: 0 0 5px black;
+    transition: margin-top 0.4s ease-in-out;
+    margin-top: 10px;
+  
+    span {
+      margin-left: 20px;
+    }
+  }
+  .hide_notification {
+    display: none;
+    margin-top: -20px;
+  }
+  
